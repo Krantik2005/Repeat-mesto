@@ -18,16 +18,72 @@
       <div class="profile__info">
         <div class="profile__inner">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button"></button>
+          <button type="button" class="profile__edit-button"></button>
         </div>
         <p class="profile__subtitle">Исследователь океана</p>
       </div>
-      <button class="profile__add-button"></button>
+      <button type="button" class="profile__add-button"></button>
     </section>
-    <section class="cards"></section>
+    <section class="container">
+      <figure class="cards">
+        <img src="./images/cards/Beshtau.jpg" alt="Beshtau" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Бештау</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+      <figure class="cards">
+        <img src="./images/cards/Elbrus.jpg" alt="Elbrus" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Эльбрус</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+      <figure class="cards">
+        <img src="./images/cards/Monastery.jpg" alt="Monastery" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Монастырь</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+      <figure class="cards">
+        <img src="./images/cards/Snake.jpg" alt="Snake" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Змейка</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+      <figure class="cards">
+        <img src="./images/cards/winter.jpg" alt="winter kmv" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Зима</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+      <figure class="cards">
+        <img src="./images/cards/Zheleznovodsk.jpg" alt="Zheleznovodsk" class="cards__image">
+        <figcaption class="cards__item">
+          <h3 class="cards__text">Железноводск</h3>
+          <button class="cards__like" type="button"></button>
+        </figcaption>
+      </figure>
+    </section>
   </main>
   <footer class="footer">
-
+    <p class="footer__copyright">&copy; Mesto Russia</p>
   </footer>
+  <div class="popup">
+    <div class="popup__container popup_is_opened">
+      <button type="button" class="popup__close"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <div class="popup__field">
+        <input type="text" class="popup__input popup__input_type_name" name="name" placeholder="Введите имя" required minlength="2" maxlength="40">
+      </div>
+      <div class="popup__field">
+        <input type="text" class="popup__input popup__input_type_self" name="self" placeholder="Введите профессию" required minlength="2" maxlength="200">
+      </div>
+      <button type="submit" class="popup__button">Сохранить</button>
+    </div>
+  </div>
 </body>
 </html>

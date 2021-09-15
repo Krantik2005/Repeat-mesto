@@ -5,5 +5,7 @@
 @import url(../block/content/content.css);
 @import url(../block/logo/logo.css);
 @import url(../block/profile/profile.css);
+@import url(../block/container/container.css);
 @import url(../block/cards/cards.css);
 @import url(../block/footer/footer.css);
+@import url(../block/popup/popup.css);
